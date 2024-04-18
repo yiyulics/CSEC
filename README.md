@@ -1,7 +1,7 @@
 # Color Shift Estimation-and-Correction for Image Enhancement (CVPR 2024)
 
 <div align="center">
-    📜<a href="https://drive.google.com/file/d/1jZB2rW_I2WLTE5yNA4IZq9wb5p4NNOCR/view?usp=drive_link">Paper</a>(Google Drive)
+    📜<a href="https://drive.google.com/file/d/1jZB2rW_I2WLTE5yNA4IZq9wb5p4NNOCR/view?usp=drive_link" target=”_blank”>Paper</a>(Google Drive)
 </div>
 
 
