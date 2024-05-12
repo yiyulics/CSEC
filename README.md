@@ -27,11 +27,11 @@ Comprehensive experiments show that our method outperforms existing approaches.
 ## :postbox: Cite Our Paper
 If you find our work helpful, feel free to cite our paper as:
 ```
-@inproceedings{li_2024_cvpr,
-    title =        {Color Shift Estimation-and-Correction for Image Enhancement},
-    author =       {Yiyu Li, Ke Xu, Gerhard Petrus Hancke, and Rynson W.H. Lau},
-    booktitle =    {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year =         {2024}
+@inproceedings{li_2024_cvpr_color,
+    title       =   {Color Shift Estimation-and-Correction for Image Enhancement},
+    author      =   {Yiyu Li and Ke Xu and Gerhard Petrus Hancke and Rynson W.H. Lau},
+    booktitle   =   {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year        =   {2024}
 }
 ```
 
