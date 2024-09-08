@@ -1,0 +1,22 @@
+# @package runtime
+
+modelname: bilateral_upsample_net
+predict_illumination: false
+loss:
+    mse: 1.0
+    cos: 0.1
+    ltv: 0.1
+
+luma_bins: 8
+channel_multiplier: 1
+spatial_bin: 16
+batch_norm: true
+low_resolution: 256
+coeffs_type: matrix
+conv_type: conv
+backbone: ori
+illu_map_power: false
+
+# only work when using hist-unet
+defaults:
+    - hist_unet.default@hist_unet

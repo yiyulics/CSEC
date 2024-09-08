@@ -1,0 +1,27 @@
+# @package runtime
+
+defaults:
+    - csecnet.default
+
+loss:
+    ltv: 0
+    cos: 0
+    cos2: 0.5
+    tvloss1: 0
+    tvloss2: 0
+    l1_loss: 1.0
+    tvloss1_new: 0.01
+    tvloss2_new: 0.01
+    normal_ex_loss: 0.1
+    ssim_loss: 1.0
+    vgg_loss: 0.01
+
+backbone: bilateral_upsample_net
+
+bilateral_upsample_net:
+    backbone: hist-unet
+    hist_unet:
+        guide_feature_from_hist: true
+        region_num: 2
+        drconv_position: [0, 1]
+        channel_nums: [16, 32, 64, 128, 256]

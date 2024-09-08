@@ -1,0 +1,7 @@
+# @package ds
+class: img_dataset
+name: lcdp_data.train
+input:
+    - /path/to/input/*
+GT:
+    - /path/to/gt/*

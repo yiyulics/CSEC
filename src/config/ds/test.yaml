@@ -1,0 +1,7 @@
+# @package ds
+class: img_dataset
+name: lcdp_data.test
+input:
+    - /path/to/test-input/*
+GT:
+    - /path/to/test-gt/*

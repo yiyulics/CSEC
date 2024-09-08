@@ -1,12 +1,8 @@
 # Color Shift Estimation-and-Correction for Image Enhancement (CVPR 2024)
 
-<div align="center">
-    📜<a href="https://drive.google.com/file/d/1jZB2rW_I2WLTE5yNA4IZq9wb5p4NNOCR/view?usp=drive_link">Paper</a>(Google Drive)
-</div>
+[Paper(arXiv)](https://arxiv.org/abs/2405.17725) | [Paper(CVF Open Access)](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Color_Shift_Estimation-and-Correction_for_Image_Enhancement_CVPR_2024_paper.pdf) | [Dataset(LCDP)](https://github.com/onpix/LCDPNet/tree/main) | [Dataset(MSEC)](https://github.com/mahmoudnafifi/Exposure_Correction) | [Pretrained Models](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=sharing)
 
-<br/>
-
-This is the official implementation of the paper "Color Shift Estimation-and-Correction for Image Enhancement". The code is implemented in PyTorch.
+This is the official implementation of the paper *"Color Shift Estimation-and-Correction for Image Enhancement"*. The code is implemented in PyTorch.
 
 
 **Abstract**: Images captured under sub-optimal illumination conditions may contain both over- and under-exposures.
@@ -22,17 +18,68 @@ Comprehensive experiments show that our method outperforms existing approaches.
 
 ## :mega: News
 - [2024/04/18] Update Google Drive link for the paper and README.
+- [2024/09/08] Release training and testing code, and model weights. Update paper link to arXiv and CVF Open Access version. Update README documentation.
 
 
-## :postbox: Cite Our Paper
-If you find our work helpful, feel free to cite our paper as:
+## :wrench: Installation
+To get started, clone this project, create a conda virtual environment using Python 3.9 (or higher versions may do as well, we've tested on version 3.9), and install the requirements:
 ```
-@inproceedings{li_2024_cvpr_color,
+git clone https://github.com/yiyulics/CSEC.git
+cd CSEC
+conda create -n csec python=3.9
+conda activate csec
+# Change the following line to match your environment
+# Reference: https://pytorch.org/get-started/previous-versions/#v1121
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge
+pip install -r requirements.txt
+```
+
+
+## :computer: Running the Code
+
+### Evaluation
+
+To evaluate the trained model, you'll need to do the following steps:
+- Get the [pretrained models](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=sharing) (or you can use your own trained weights) and put them in the `/pretrained` folder.
+- Modify the path direct to test dataset in `/src/config/ds/test.yaml`.
+- Run the following command:
+    ```
+    python src/test.py checkpoint_path=/path/to/checkpoint
+    ```
+- The results will be saved in the `test_result` folder under `/path/to/checkpoint`.
+
+### Training
+
+To train you own model from scratch, you'll need to do the following steps:
+- Prepare the training dataset. You can use the [LCDP dataset](https://github.com/onpix/LCDPNet/tree/main) or [MSEC dataset](https://github.com/mahmoudnafifi/Exposure_Correction) (or you can use your own dataset).
+- Modify the path direct to training dataset in `/src/config/ds/train.yaml`.
+- Modify the path direct to valid dataset in `/src/config/ds/valid.yaml` (if have any).
+- Run the following command:
+    ```
+    python src/train.py
+    ```
+- The trained model and intermediate results will be saved in the `/log` folder.
+
+#### OOM Errors
+
+You may need to reduce the batch size in `src/config/config.yaml` to avoid out of memory errors. If you do this, but want to preserve quality, be sure to increase the number of training iterations and decrease the learning rate by whatever scale factor you decrease batch size by.
+
+
+
+## :postbox: Citation
+If you find our work helpful, please cite our paper as:
+```
+@inproceedings{li_2024_cvpr_csec,
     title       =   {Color Shift Estimation-and-Correction for Image Enhancement},
     author      =   {Yiyu Li and Ke Xu and Gerhard Petrus Hancke and Rynson W.H. Lau},
     booktitle   =   {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     year        =   {2024}
 }
 ```
+Should you have any questions, please feel free to contact me at [yiyuli.cs@my.cityu.edu.hk](mailto:yiyuli.cs@my.cityu.edu.hk).
+
+
+## :sparkles: Acknowledgements
+The project is largely based on [LCDPNet](https://github.com/onpix/LCDPNet.git). Many thanks to the project for their excellent contributions!
 
 
