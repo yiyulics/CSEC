@@ -76,7 +76,7 @@ If you find our work helpful, please cite our paper as:
     year        =   {2024}
 }
 ```
-Should you have any questions, please feel free to contact me at [yiyuli.cs@my.cityu.edu.hk](mailto:yiyuli.cs@my.cityu.edu.hk).
+Should you have any questions, feel free to post an issue or contact me at [yiyuli.cs@my.cityu.edu.hk](mailto:yiyuli.cs@my.cityu.edu.hk).
 
 
 ## :sparkles: Acknowledgements
