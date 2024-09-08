@@ -10,6 +10,6 @@ pytorch_lightning==1.7.6
 PyYAML==6.0.1
 PyYAML==6.0.2
 scikit-image==0.22.0
-torch==1.12.1
+torch==2.2.0
 torchvision==0.13.1
 wandb==0.16.2
