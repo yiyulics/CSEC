@@ -22,7 +22,7 @@ Comprehensive experiments show that our method outperforms existing approaches.
 
 
 ## :wrench: Installation
-To get started, clone this project, create a conda virtual environment using Python 3.9 (or higher versions may do as well, we've tested on version 3.9), and install the requirements:
+To get started, clone this project, create a conda virtual environment using Python 3.9 (or higher versions may do as well), and install the requirements:
 ```
 git clone https://github.com/yiyulics/CSEC.git
 cd CSEC
@@ -40,25 +40,25 @@ pip install -r requirements.txt
 ### Evaluation
 
 To evaluate the trained model, you'll need to do the following steps:
-- Get the [pretrained models](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=sharing) (or you can use your own trained weights) and put them in the `/pretrained` folder.
-- Modify the path direct to test dataset in `/src/config/ds/test.yaml`.
+- Get the [pretrained models](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=sharing) (or you can use your own trained weights) and put them in the `pretrained/` folder.
+- Modify the path to the test dataset in `src/config/ds/test.yaml` (if you don't need ground truth images for testing, just leave the `GT` value as `none`).
 - Run the following command:
     ```
-    python src/test.py checkpoint_path=/path/to/checkpoint
+    python src/test.py checkpoint_path=path/to/checkpoint/filename.ckpt
     ```
-- The results will be saved in the `test_result` folder under `/path/to/checkpoint`.
+- The results will be saved in the `test_result/` folder under `path/to/checkpoint/`.
 
 ### Training
 
-To train you own model from scratch, you'll need to do the following steps:
-- Prepare the training dataset. You can use the [LCDP dataset](https://github.com/onpix/LCDPNet/tree/main) or [MSEC dataset](https://github.com/mahmoudnafifi/Exposure_Correction) (or you can use your own dataset).
-- Modify the path direct to training dataset in `/src/config/ds/train.yaml`.
-- Modify the path direct to valid dataset in `/src/config/ds/valid.yaml` (if have any).
+To train your own model from scratch, you'll need to do the following steps:
+- Prepare the training dataset. You can use the [LCDP dataset](https://github.com/onpix/LCDPNet/tree/main) or [MSEC dataset](https://github.com/mahmoudnafifi/Exposure_Correction) (or you can use your own paired data).
+- Modify the path to the training dataset in `src/config/ds/train.yaml`.
+- Modify the path to the validation dataset in `src/config/ds/valid.yaml` (if have any).
 - Run the following command:
     ```
-    python src/train.py
+    python src/train.py name=your_experiment_name
     ```
-- The trained model and intermediate results will be saved in the `/log` folder.
+- The trained models and intermediate results will be saved in the `log/` folder.
 
 #### OOM Errors
 
