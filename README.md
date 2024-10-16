@@ -60,7 +60,8 @@ To evaluate the trained model, you'll need to do the following steps:
     ```
     python src/test.py checkpoint_path=/path/to/checkpoint/filename.ckpt
     ```
-- The results will be all the `*.png` images saved in the `test_result/` folder under `path/to/checkpoint/`, and the subfolders of `test_result/` are the intermediate results of each image.
+- Then under the folder `/path/to/checkpoint/`, a new folder named `test_result/` will be created, and all the final enhanced images (`*.png` images) will be saved in this folder. Other intermediate results of each image will also be saved in the subfolders of `test_result/` (e.g., `test_result/normal/` for pseudo-normal images, etc.)
+
 
 ### Training
 
