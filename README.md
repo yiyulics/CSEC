@@ -1,6 +1,20 @@
 # Color Shift Estimation-and-Correction for Image Enhancement (CVPR 2024)
 
-[Paper(arXiv)](https://arxiv.org/abs/2405.17725) | [Paper(CVF Open Access)](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Color_Shift_Estimation-and-Correction_for_Image_Enhancement_CVPR_2024_paper.pdf) | [Dataset(LCDP)](https://github.com/onpix/LCDPNet/tree/main) | [Dataset(MSEC)](https://github.com/mahmoudnafifi/Exposure_Correction) | [Pretrained Models](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=sharing)
+<div align="center">
+
+
+[![arxiv](https://img.shields.io/badge/Paper-arXiv-b31b1b)](https://arxiv.org/abs/2405.17725)
+[![cvf](https://img.shields.io/badge/Paper-CVF-%23357DBD)](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Color_Shift_Estimation-and-Correction_for_Image_Enhancement_CVPR_2024_paper.pdf)
+[![LCDP](https://img.shields.io/badge/Dataset-LCDP-%23cda6c3)](https://github.com/onpix/LCDPNet/tree/main)
+[![MSEC](https://img.shields.io/badge/Dataset-MSEC-%23cda6c3)](https://github.com/mahmoudnafifi/Exposure_Correction)
+[![Pretrained Model](https://img.shields.io/badge/Pretrained-Model-%2380f69a)](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=sharing)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/color-shift-estimation-and-correction-for/image-enhancement-on-exposure-errors)](https://paperswithcode.com/sota/image-enhancement-on-exposure-errors?p=color-shift-estimation-and-correction-for)
+
+
+</div>
+
+
 
 This is the official implementation of the paper *"Color Shift Estimation-and-Correction for Image Enhancement"*. The code is implemented in PyTorch.
 
@@ -44,9 +58,9 @@ To evaluate the trained model, you'll need to do the following steps:
 - Modify the path to the test dataset in `src/config/ds/test.yaml` (if you don't need ground truth images for testing, just leave the `GT` value as `none`).
 - Run the following command:
     ```
-    python src/test.py checkpoint_path=path/to/checkpoint/filename.ckpt
+    python src/test.py checkpoint_path=/path/to/checkpoint/filename.ckpt
     ```
-- The results will be saved in the `test_result/` folder under `path/to/checkpoint/`.
+- The results will be all the `*.png` images saved in the `test_result/` folder under `path/to/checkpoint/`, and the subfolders of `test_result/` are the intermediate results of each image.
 
 ### Training
 
