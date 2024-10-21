@@ -40,11 +40,15 @@ To get started, clone this project, create a conda virtual environment using Pyt
 ```
 git clone https://github.com/yiyulics/CSEC.git
 cd CSEC
+
 conda create -n csec python=3.9
 conda activate csec
+
 # Change the following line to match your environment
-# Reference: https://pytorch.org/get-started/previous-versions/#v1121
+# Refer to https://pytorch.org/get-started/previous-versions/#v1121
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge
+
+pip install pytorch_lightning==1.7.6
 pip install -r requirements.txt
 ```
 
