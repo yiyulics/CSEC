@@ -1,5 +1,5 @@
 <p align="center">
-    <h1 align="center">Color Shift Estimation-and-Correction for Image Enhancement (CVPR 2024)</h1>
+    <h1 align="center">Color Shift Estimation-and-Correction for Image Enhancement</h1>
     <p align="center">
         <a href="https://yiyulics.github.io/">Yiyu Li</a>
         ·
