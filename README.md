@@ -1,4 +1,15 @@
-# Color Shift Estimation-and-Correction for Image Enhancement (CVPR 2024)
+<p align="center">
+    <h1 align="center">Color Shift Estimation-and-Correction for Image Enhancement (CVPR 2024)</h1>
+    <p align="center">
+        <a href="https://yiyulics.github.io/">Yiyu Li</a>
+        ·
+        <a href="https://kkbless.github.io/">Ke Xu</a>
+        ·
+        <a href="https://scholars.cityu.edu.hk/en/persons/gerhard-petrus-hancke(9e59c8eb-ba32-4075-97f7-e44e82367742).html">Gerhard Petrus Hancke</a>
+        ·
+        <a href="https://www.cs.cityu.edu.hk/~rynson/">Rynson W.H. Lau</a>
+    </p>
+</p>
 
 <div align="center">
 
@@ -14,9 +25,6 @@
 
 </div>
 
-
-
-This is the official implementation of the paper *"Color Shift Estimation-and-Correction for Image Enhancement"*. The code is implemented in PyTorch.
 
 
 **Abstract**: Images captured under sub-optimal illumination conditions may contain both over- and under-exposures.
