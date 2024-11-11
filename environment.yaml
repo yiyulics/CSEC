@@ -152,4 +152,4 @@ dependencies:
       - werkzeug==2.2.3
       - yarl==1.9.4
       - zipp==3.15.0
-prefix: /home/yiyu/anaconda3/envs/lcdp
+prefix: /home/user/anaconda3/envs/env_name
