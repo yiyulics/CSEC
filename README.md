@@ -41,6 +41,7 @@ Comprehensive experiments show that our method outperforms existing approaches.
 ## :mega: News
 - [2024/04/18] Update Google Drive link for the paper and README.
 - [2024/09/08] Release training and testing code, and model weights. Update paper link to arXiv and CVF Open Access version. Update README documentation.
+- [2024/11/11] Add environment yaml file.
 
 
 ## :wrench: Installation
