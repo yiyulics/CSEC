@@ -18,7 +18,7 @@
 [![cvf](https://img.shields.io/badge/Paper-CVF-%23357DBD)](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Color_Shift_Estimation-and-Correction_for_Image_Enhancement_CVPR_2024_paper.pdf)
 [![LCDP](https://img.shields.io/badge/Dataset-LCDP-%23cda6c3)](https://github.com/onpix/LCDPNet/tree/main)
 [![MSEC](https://img.shields.io/badge/Dataset-MSEC-%23cda6c3)](https://github.com/mahmoudnafifi/Exposure_Correction)
-[![Pretrained Model](https://img.shields.io/badge/Pretrained-Model-%2380f69a)](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=sharing)
+[![Pretrained Model](https://img.shields.io/badge/Pretrained-Model-%2380f69a)](https://drive.google.com/file/d/1uP6e2yod6BFxxJBijwwn_KwD7uIHV5V_/view?usp=sharing)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/color-shift-estimation-and-correction-for/image-enhancement-on-exposure-errors)](https://paperswithcode.com/sota/image-enhancement-on-exposure-errors?p=color-shift-estimation-and-correction-for)
 
