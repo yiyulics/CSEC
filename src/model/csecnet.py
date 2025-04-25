@@ -231,13 +231,13 @@ class DeepWBNet(nn.Module):
 
         # Modulation:
         # ──────────────────────────────────────────────────────────
-        out = self.out_net(
+        weight_map = self.out_net(
             torch.cat([pseudo_normal, brighten_x2, darken_x2], dim=1)
         )
         w1 = weight_map[:, 0, ...].unsqueeze(1)
         w2 = weight_map[:, 1, ...].unsqueeze(1)
         w3 = weight_map[:, 2, ...].unsqueeze(1)
-        out = x * w1 + brighten_x1 * w2 + darken_x1 * w3
+        out = pseudo_normal * w1 + brighten_x2 * w2 + darken_x2 * w3
 
         self.res.update(
             {
