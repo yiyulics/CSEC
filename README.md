@@ -67,7 +67,7 @@ pip install -r requirements.txt
 ### Evaluation
 
 To evaluate the trained model, you'll need to do the following steps:
-- Get the [pretrained models](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=sharing) (or you can use your own trained weights) and put them in the `pretrained/` folder.
+- Get the [pretrained models](https://drive.google.com/file/d/1uP6e2yod6BFxxJBijwwn_KwD7uIHV5V_/view?usp=sharing) (or you can use your own trained weights) and put them in the `pretrained/` folder.
 - Modify the path to the test dataset in `src/config/ds/test.yaml` (if you don't need ground truth images for testing, just leave the `GT` value as `none`).
 - Run the following command:
     ```
