@@ -1,7 +1,7 @@
 ---
 name: Question
 about: Ask for help using the system
-title: ''
+title: "[QUESTION] YOUR ISSUE TITLE HERE"
 labels: question
 assignees: ''
 
@@ -24,9 +24,11 @@ Provide the FULL output logs from your command as a .txt file.
 
 ### Platform
 - OS & OS Version: 
-- GPU:
-- GPU Driver Version:
-- RAM (GB):
+- GPU: 
+- RAM (GB): 
+- CUDA Version: 
+- PyTorch Version: 
+- PyTorch Lightning Version: 
 
 # Additional context
 Add any other context about the problem here.
