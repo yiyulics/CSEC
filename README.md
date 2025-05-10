@@ -18,7 +18,7 @@
 [![cvf](https://img.shields.io/badge/Paper-CVF-%23357DBD)](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Color_Shift_Estimation-and-Correction_for_Image_Enhancement_CVPR_2024_paper.pdf)
 [![LCDP](https://img.shields.io/badge/Dataset-LCDP-%23cda6c3)](https://github.com/onpix/LCDPNet/tree/main)
 [![MSEC](https://img.shields.io/badge/Dataset-MSEC-%23cda6c3)](https://github.com/mahmoudnafifi/Exposure_Correction)
-[![Pretrained Model](https://img.shields.io/badge/Pretrained-Model-%2380f69a)](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=drive_link)
+[![Pretrained Model](https://img.shields.io/badge/Pretrained-Model-%2380f69a)](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=sharing)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/color-shift-estimation-and-correction-for/image-enhancement-on-exposure-errors)](https://paperswithcode.com/sota/image-enhancement-on-exposure-errors?p=color-shift-estimation-and-correction-for)
 
@@ -53,7 +53,7 @@ cd CSEC
 conda create -n csec python=3.9
 conda activate csec
 
-# Change the following line to match your environment
+# Change the following line to match your CUDA version
 # Refer to https://pytorch.org/get-started/previous-versions/#v1121
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge
 
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 ### Evaluation
 
 To evaluate the trained model, you'll need to do the following steps:
-- Get the [pretrained model](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=drive_link) (or you can use your own trained weights) and put them in the `pretrained/` folder.
+- Get the [pretrained model](https://drive.google.com/drive/folders/1SEQu3f2IdNnLlFH1OLUGyny5Xy-0TGzb?usp=sharing) (or you can use your own trained weights) and put them in the `pretrained/` folder.
 - Modify the path to the test dataset in `src/config/ds/test.yaml` (if you don't need ground truth images for testing, just leave the `GT` value as `none`).
 - Run the following command:
     ```
